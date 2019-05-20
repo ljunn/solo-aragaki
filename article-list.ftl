@@ -29,10 +29,10 @@
 				<div class="excerpt">${article.articleAbstractText}</div>
 				<div class="meta">
 					<span class="item">
-						<i>fa.fa-calendar-o</i>${article.articleCreateDate?string('yyyy.MM.dd')}
+						<i class="fa.fa-calendar-o"></i>${article.articleCreateDate?string('yyyy.MM.dd')}
 					</span>
 					<span class="item">
-						<i>fa.fa-code</i>
+						<i class="fa.fa-code"></i>
 						<#list article.articleTags?split(",") as articleTag>
 							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
 								${articleTag}<#if articleTag_has_next>,</#if>
@@ -40,11 +40,11 @@
 						</#list>
 					</span>
 					<span class="item">
-						<i>fa.fa-battery-three-quarters</i>
+						<i class="fa.fa-battery-three-quarters"></i>
 						<span>${article.articleViewCount}度</span>
 					</span>
 					<span class="item">
-						<i>fa.fa.fa-comment-o</i>
+						<i class="fa.fa.fa-comment-o"></i>
 						<span>${article.articleCommentCount}评</span>
 					</span>
 				</div>
