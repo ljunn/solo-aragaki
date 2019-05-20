@@ -17,6 +17,8 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 -->
+
+<div class="wrapper">
 <main >
 	<section class="article-list">
 		 <#list articles as article>
@@ -56,6 +58,7 @@
    
 </main>
 
+
 <#if 0 != paginationPageCount>
     <nav class="pagination">
         <#if 1 != paginationPageNums?first>
@@ -79,3 +82,5 @@
         </#if>
     </nav>
 </#if>
+
+</div>
