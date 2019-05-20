@@ -22,7 +22,7 @@
 <aside>
 	<div class=".aside-left.sidebar">
 	
-	 <#if 0 != mostCommentArticles?size>
+	 <#if mostCommentArticles??&& (mostCommentArticles?size > 0)>
         <h3>最热文章</h3>
         <ul id="mostCommentArticles">
             <#list mostCommentArticles as article>
