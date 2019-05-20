@@ -23,7 +23,7 @@
 	<div class=".aside-left.sidebar">
 		<h3>最热文章</h3>
 		<ul>
-			 <#list mostCommentArticles as article>
+			 <#list mostCommentArticles?? as article>
 				<li>
 					<a href="${article.articlePermalink}"  >
 						${article.articleTitle}
