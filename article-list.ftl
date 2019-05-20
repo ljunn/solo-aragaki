@@ -28,7 +28,9 @@
                         ${article.articleTitle}
                     </a> <span>${article.articleViewCount}度</span>
 				</h2>
-				<div class="excerpt">${article.articleAbstractText?substring(0,200)}...</div>
+				<div class="excerpt">
+				
+				${article.articleAbstractText}</div>
 				<div class="meta">
 					<span class="item">
 						<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
