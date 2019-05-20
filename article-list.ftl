@@ -28,13 +28,13 @@
                         ${article.articleTitle}
                     </a> <span>${article.articleViewCount}度</span>
 				</h2>
-				<div class="excerpt">${article.articleAbstractText}</div>
+				<div class="excerpt">${article.articleAbstractText?substring(0,200)}...</div>
 				<div class="meta">
 					<span class="item">
-						<i class="fa.fa-calendar-o" aria-hidden="true"></i>${article.articleCreateDate?string('yyyy.MM.dd')}
+						<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
 					</span>
 					<span class="item">
-						<i class="fa.fa-code" aria-hidden="true"></i>
+						<i class="fa fa-code" aria-hidden="true"></i>
 						<#list article.articleTags?split(",") as articleTag>
 							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
 								${articleTag}<#if articleTag_has_next>,</#if>
@@ -42,11 +42,11 @@
 						</#list>
 					</span>
 					<span class="item">
-						<i class="fa.fa-battery-three-quarters" aria-hidden="true"></i>
+						<i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
 						<span>${article.articleViewCount}度</span>
 					</span>
 					<span class="item">
-						<i class="fa.fa.fa-comment-o" aria-hidden="true"></i>
+						<i class="fa fa.fa-comment-o" aria-hidden="true"></i>
 						<span>${article.articleCommentCount}评</span>
 					</span>
 				</div>

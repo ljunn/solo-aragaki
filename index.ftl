@@ -24,7 +24,7 @@
     <@head title="${blogTitle}">
         <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
-		 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </@head>
 </head>
 <body >
