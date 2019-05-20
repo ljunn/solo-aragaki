@@ -22,16 +22,20 @@
 <aside>
 	<div class=".aside-left.sidebar">
 		<h3>最热文章</h3>
+			<#if 0 != mostCommentArticles?size>
 		<ul>
+	
 			 <#list mostCommentArticles as article>
 				<li>
-					<a href="${article.articlePermalink}"  >
-						${article.articleTitle}
+					 <a rel="nofollow" title="${article.articleTitle}"
+                   href="${servePath}${article.articlePermalink}">
+							${article.articleTitle}
 					</a>
 					<span>${article.articleViewCount}度</span>
 				</li>
 			 </#list>
 		</ul>
+		 </#if>
 		<div class="clear"></div>
 	</div>
 	<div class=".aside-left.sidebar">
