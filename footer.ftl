@@ -59,7 +59,7 @@
 
 <footer class="footer">
     <#include "../../common-template/macro-user_site.ftl"/>
-    <div class="ft__center">
+    <div class="ft__center" style="text-align: center;font-size: 13px;line-height: 20px;">
         <@userSite dir="n"/>
     </div>
 	
