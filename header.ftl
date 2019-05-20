@@ -23,11 +23,9 @@
 -->
 
 
-
-
-<header class="header">
-    <div class="wrapper">
-        <a href="${servePath}/" rel="start" class="logo">
+<div class="wrapper">
+	<header>
+		 <a href="${servePath}/" rel="start" class="logo">
             <img src="${adminUser.userAvatar}"/>
         </a>
 		
@@ -52,9 +50,9 @@
 			
 			</nav>
 		</div>
+	</header>
+</div>
 
-    </div>
-</header>
 
 <script>
 

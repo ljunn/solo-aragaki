@@ -28,10 +28,8 @@
     </@head>
 </head>
 <body >
-<div class="wrapper'>
 <#include "header.ftl">
 <#include "article-list.ftl">
 <#include "footer.ftl">
-</div>
 </body>
 </html>
