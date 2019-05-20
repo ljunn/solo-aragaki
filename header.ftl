@@ -51,7 +51,7 @@
 			</nav>
 		</div>
 	</header>
-	<blockquote></blockquote>
+	<div height="20px"></div>
 </div>
 
 
