@@ -31,17 +31,14 @@
 					<span class="item">
 						<i>fa.fa-calendar-o</i>${article.articleCreateDate?string('yyyy.MM.dd')}
 					</span>
-					<#if article.articleTags?size>0>
-						<span class="item">
-							<i>fa.fa-code</i>
-							<#list article.articleTags as tag>
-								<a pjax-title="${tag.tagTitle}" href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}" >
-									${tag.tagTitle}
-								</a>
-							</#list>
-						</span>
-						
-					</#if>
+					<span class="item">
+						<i>fa.fa-code</i>
+						<#list article.articleTags?split(",") articleTag>
+							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
+								${articleTag}<#if articleTag_has_next>,</#if>
+							</a>
+						</#list>
+					</span>
 					<span class="item">
 						<i>fa.fa-battery-three-quarters</i>
 						<span>${article.articleViewCount}度</span>

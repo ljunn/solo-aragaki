@@ -52,11 +52,10 @@
 			<#if article.articleTags?size>0>
 				<span class="item">
 					<i>fa.fa-code</i>
-					<#list article.articleTags as tag>
-						<a pjax-title="${tag.tagTitle}" href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}" >
-							${tag.tagTitle}
-						</a>
-					</#list>
+                    <#list article.articleTags?split(",") as articleTag>
+                        <a rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
+                            ${articleTag}</a><#if articleTag_has_next>,</#if>
+                    </#list>
 				</span>
 				
 			<#if>
