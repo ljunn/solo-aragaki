@@ -45,11 +45,11 @@
 					</span>
 					<span class="item">
 						<i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
-						<span>${article.articleViewCount}度</span>
+						<span>&nbsp;${article.articleViewCount}度</span>
 					</span>
 					<span class="item">
 						<i class="fa fa.fa-comment-o" aria-hidden="true"></i>
-						<span>${article.articleCommentCount}评</span>
+						<span>&nbsp;${article.articleCommentCount}评</span>
 					</span>
 				</div>
 				
