@@ -23,7 +23,7 @@
 			<article>
 				<h2>
 					<a pjax-title="${article.articleTitle}" href="${servePath}${article.articlePermalink}">
-                        ${article.articleAbstractText}
+                        ${article.articleTitle}
                     </a> <span>${article.articleViewCount}度</span>
 				</h2>
 				<div class="excerpt">${article.articleAbstractText}</div>
