@@ -23,16 +23,15 @@
 <head>
     <@head title="${blogTitle}">
         <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
-		 <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/_icon.scss?${staticResourceVersion}"/>
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </@head>
 </head>
 <body >
+<div class="wrapper'>
 <#include "header.ftl">
-<main id="pjax" class="fn__flex-1">
 <#include "article-list.ftl">
-</main>
 <#include "footer.ftl">
+</div>
 </body>
 </html>
