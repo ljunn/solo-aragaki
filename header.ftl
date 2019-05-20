@@ -27,9 +27,8 @@
 
 <header class="header">
     <div class="wrapper">
-        <a href="${servePath}" rel="start" class="logo">
+        <a href="${servePath}/" rel="start" class="logo">
             <img src="${adminUser.userAvatar}"/>
-        
         </a>
 		
 		<div class="description">
