@@ -33,7 +33,7 @@
 					</span>
 					<span class="item">
 						<i>fa.fa-code</i>
-						<#list article.articleTags?split(",") articleTag>
+						<#list article.articleTags?split(",") as articleTag>
 							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
 								${articleTag}<#if articleTag_has_next>,</#if>
 							</a>
