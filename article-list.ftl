@@ -41,7 +41,7 @@
 							</#list>
 						</span>
 						
-					<#if>
+					</#if>
 					<span class="item">
 						<i>fa.fa-battery-three-quarters</i>
 						<span>${article.articleViewCount}度</span>
