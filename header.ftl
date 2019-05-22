@@ -23,7 +23,7 @@
 -->
 
 
-<div class="wrapper">
+<div class="wrapper" >
 	<header>
 		 <a href="${servePath}/" rel="start" class="logo">
             <img src="${adminUser.userAvatar}"/>

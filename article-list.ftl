@@ -18,12 +18,12 @@
 
 -->
 
-<div class="wrapper">
+<div class="wrapper" style="margin-top:0px;">
 <main >
 	<section class="article-list">
 		 <#list articles as article>
 			<article>
-				<h2>
+				<h2 style="margin-top:0px;padding-top:0px;">
 					<a pjax-title="${article.articleTitle}" href="${servePath}${article.articlePermalink}">
                         ${article.articleTitle}
                     </a> <span>${article.articleViewCount}度</span>
