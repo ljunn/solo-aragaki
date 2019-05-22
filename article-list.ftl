@@ -24,7 +24,7 @@
 		 <#list articles as article>
 			<article>
 				<h2 style="margin-top:0px;padding-top:0px;">
-					<a pjax-title="${article.articleTitle}" href="${servePath}${article.articlePermalink}">
+					<a href="${servePath}${article.articlePermalink}">
                         ${article.articleTitle}
                     </a> <span>${article.articleViewCount}度</span>
 				</h2>
