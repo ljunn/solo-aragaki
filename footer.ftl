@@ -74,7 +74,7 @@
     </nav>
     <div class="footer__border mobile__none"></div>
   
-	<span>&copy; ${year} &nbsp;<a href="${servePath}">${blogTitle}</a> - ${articles?size}
+	<span>&copy; ${year} &nbsp;<a href="${servePath}">${blogTitle}</a> - 
 		<a href="${servePath}/archives.html">
             ${statistic.statisticPublishedBlogArticleCount} posts crafted
         </a>
