@@ -12,7 +12,7 @@
 <#include "header.ftl">
 <div class="wrapper" >
 <main id="pjax" class="fn__flex-1">
-
+	<section class="content">
 	
 	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	
@@ -21,13 +21,22 @@
 
 	 <#if 0 != archiveDates?size>
         <#list archiveDates as archiveDate>
-			<h4>${archiveDate.archiveDateYear}.${archiveDate.archiveDateMonth}</h4>	
-		
+			<h2>${archiveDate.archiveDateYear}</h2>	
+				<#list articles as article>
+					<#if ${article.articleCreateDate?string('yyyy')} == ${archiveDate.archiveDateYear}&&${article.articleCreateDate?string('MM')} ==${archiveDate.archiveDateMonth}>
+						测试
+					</#if>
+				
+				</#list>
         </#list>
     </#if>
 	
 	
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
+	
+	</section>
+	
+
 </main>
 </div>
 <#include "footer.ftl">
