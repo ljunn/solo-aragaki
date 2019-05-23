@@ -23,9 +23,7 @@
         <#list archiveDates as archiveDate>
 			<h2>${archiveDate.archiveDateYear}</h2>	
 				<#list articles as article>
-					<#if ${article.articleCreateDate?string('yyyy')} == ${archiveDate.archiveDateYear}&&${article.articleCreateDate?string('MM')} ==${archiveDate.archiveDateMonth}>
-						测试
-					</#if>
+				
 				
 				</#list>
         </#list>
