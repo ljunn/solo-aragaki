@@ -14,6 +14,9 @@
 			$(document).ready(function(){
 				$.ajax({url:"/articles",success:function(result){
 					articles=result.rslts.articles;
+					articles.sort(function(a,b){
+						return b.articleCreateTime-a.articleCreateTime;
+					});
 					console.log(articles);
 					var oldyear=0;
 					$.each(articles,function(index,a){
