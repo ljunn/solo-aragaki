@@ -21,7 +21,14 @@
 						var date=new Date(a.articleCreateTime);
 						var year=date.getFullYear();
 						console.log(year);
-						$("#content").append("<h2>"+year+"</h2>");						
+						if(year!=oldyear){
+							if(oldyear!=0){
+								$("#content").append("</ul>");
+							}
+							$("#content").append("<ul class=\"archived-posts\">");
+							oldyear=year;
+							$("#content").append("<h2>"+oldyear+"</h2>");
+						}		
 					});
 				}});
 			});
