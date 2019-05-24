@@ -7,6 +7,16 @@
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		
+		<script type="text/javascript">
+			alert(1)
+			console.log("开始渲染归档页面...");
+	
+			$(document).ready(function(){
+				var articles=$.ajax({url:"/articles",async:true});
+				console.log(articles);
+			});
+		</script>
 </@head>
 </head>
 <body>
@@ -30,17 +40,4 @@
 </div>
 <#include "footer.ftl">
 </body>
-<script>
-	alert(1)
-	console.log("开始渲染归档页面...");
-	
-	$(document).ready(function(){
-		var articles=$.ajax({url:"/articles",async:true});
-		console.log(articles);
-		});
-	});
-	
-	
-	
-</script>
 </html>
