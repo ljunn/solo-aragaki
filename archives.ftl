@@ -11,7 +11,7 @@
 </head>
 <body class="body--gray">
 <#include "header.ftl">
-<div class="wrapper" >
+<div class="wrapper" style="margin-top:0px;">
 <main  class="fn__flex-1">
 	<section class="content" id="content">
 	
@@ -31,6 +31,7 @@
 <#include "footer.ftl">
 </body>
 <script>
+	console.log("开始渲染归档页面...");
 	$(function getArticles(){
 		$.ajax({
 			async: false,
@@ -38,6 +39,7 @@
 			type: "GET",
 			success: function (result) {
 				var articles=result.articles;
+				console.log(articles);
 				articles.sort(function (a,b){
 					return  a.articleCreateDate>b.articleCreateDate?1:-1;
 				});
@@ -51,6 +53,7 @@
 						oldyear=a.articleCreateDate.getFullYear();
 						$("#content").append("<h2>"+oldyear+"</h2>");
 					}
+					console.log($("#content").val());
 					$("#content").append("<li>");
 					$("#content").append(a.articleCreateDate);
 					$("#content").append("<a  href='${servePath}'+a.articlePermalink>"+a.articleAbstractText+"
@@ -63,6 +66,7 @@
 						}
 					}
 					$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
+					console.log($("#content").val());
 				}
 			}
 		});

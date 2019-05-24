@@ -76,7 +76,7 @@
   
 	<span>&copy; ${year} &nbsp;<a href="${servePath}">${blogTitle}</a> - 
 		<a href="${servePath}/archives.html">
-            ${statistic.statisticPublishedBlogArticleCount} posts crafted
+            ${statistic.statisticPublishedBlogArticleCount} posts crafted 	
         </a>
 	</span>
 	<span> ♥ <a href="https://github.com/PCDotFan/Aragaki">Aragaki</a></span>
