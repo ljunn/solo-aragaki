@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<script type="text/javascript" src="${staticServePath}/js/lib/compress/pjax.min.js" charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
 </@head>
 </head>
 <body class="body--gray">
