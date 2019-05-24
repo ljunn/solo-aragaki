@@ -33,17 +33,6 @@
 <script>
 	alert(1)
 	console.log("开始渲染归档页面...");
-	$(function getArticles(){
-		$.ajax({
-			async: false,
-			url: "/articles",
-			type: "GET",
-			success: function (result) {
-				console.log(result);
-				
-			
-		});
-	})；
 	
 	
 </script>
