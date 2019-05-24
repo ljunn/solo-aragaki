@@ -36,11 +36,11 @@
 	$(function getArticles(){
 		$.ajax({
 			async: false,
-			url: Label.servePath + "/articles",
+			url: "/articles",
 			type: "GET",
 			success: function (result) {
-			
 				console.log(result);
+				
 			
 		});
 	})；
