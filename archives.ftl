@@ -56,11 +56,11 @@
 					console.log($("#content").val());
 					$("#content").append("<li>");
 					$("#content").append(a.articleCreateDate);
-					$("#content").append("<a  href='${servePath}'+a.articlePermalink>"+a.articleAbstractText+"
+					$("#content").append("<a  href='${servePath}"+a.articlePermalink+"'>"++a.articleAbstractText+"
 							</a> ");
 					if(a.articleTags.length>0){
 						for(var tag in a.articleTags){
-							$("#content").append("<a href='${servePath}/tags/"+tag.tagTitle >
+							$("#content").append("<a href='${servePath}/tags/"+tag.tagTitle+"'" >
 										&nbsp;tag.tagTitle
 									</a>");
 						}
