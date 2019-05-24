@@ -39,9 +39,8 @@
 			url: Label.servePath + "/articles",
 			type: "GET",
 			success: function (result) {
-				var articles=result.articles;
-				console.log(articles);
-				
+			
+				console.log(result);
 			
 		});
 	})；
