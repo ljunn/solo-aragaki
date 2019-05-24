@@ -17,7 +17,7 @@
 					var articles=result.rslts.articles;
 					console.log(articles);
 					
-								var oldyear=0;
+					var oldyear=0;
 					for(var a in articles){
 						if(a.articleCreateDate.getFullYear()!=oldyear){
 							if(oldyear!=0){
@@ -42,7 +42,6 @@
 						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
 						console.log($("#content").val());
 					}
-				}
 				}});
 			});
 		</script>
