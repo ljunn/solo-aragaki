@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<@head title="${archiveLabel} - ${blogTitle}">
+<@head title="归档页面">
         <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 </@head>
 </head>
-<body class="body--gray">
+<body>
 <#include "header.ftl">
 <div class="wrapper" style="margin-top:0px;">
 <main  class="fn__flex-1">
