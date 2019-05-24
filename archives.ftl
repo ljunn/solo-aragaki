@@ -16,9 +16,9 @@
 					articles=result.rslts.articles;
 					console.log(articles);
 					var oldyear=0;
-					$.each(articles,function (index, val) {
-						console.log(index+' '+value);  
-						console.log(value.articleCreateDate);
+					$.each(articles,function(index,val){
+						console.log(index+' ');
+						console.log(value);
 					});
 				}});
 			});
