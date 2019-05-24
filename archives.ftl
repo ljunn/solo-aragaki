@@ -18,7 +18,7 @@
 					var oldyear=0;
 					$.each(articles,function(index,val){
 						console.log(index+' ');
-						console.log(value);
+						console.log(val);
 					});
 				}});
 			});
