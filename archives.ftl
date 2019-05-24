@@ -31,6 +31,7 @@
 <#include "footer.ftl">
 </body>
 <script>
+	alert(1)
 	console.log("开始渲染归档页面...");
 	$(function getArticles(){
 		$.ajax({
