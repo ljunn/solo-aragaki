@@ -15,11 +15,11 @@
 				$.ajax({url:"/articles",success:function(result){
 					articles=result.rslts.articles;
 					console.log(articles);
-					
 					var oldyear=0;
-					for(int i=0;i<articles.length;i++){
-						console.log(articles[i].articleCreateTime)
-					}
+					$.each(articles,function (index, val) {
+						console.log(index+' '+value);  
+						console.log(value.articleCreateDate);
+					});
 				}});
 			});
 		</script>
