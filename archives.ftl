@@ -13,8 +13,10 @@
 			console.log("开始渲染归档页面...");
 	
 			$(document).ready(function(){
-				var rslts=$.ajax({url:"/articles",async:true});
-				var articles=rslts.articles;
+				var result=$.ajax({url:"/articles",async:true});
+				console.log(result);
+				console.log(result.rslts);
+				var articles=result.rslts.articles;
 				console.log(articles);
 			});
 		</script>
