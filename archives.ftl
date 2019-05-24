@@ -9,15 +9,14 @@
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		
 		<script type="text/javascript">
-			alert(1)
 			console.log("开始渲染归档页面...");
 	
 			$(document).ready(function(){
-				var result=$.ajax({url:"/articles",async:true});
-				console.log(result);
-				console.log(result.rslts);
-				var articles=result.rslts.articles;
-				console.log(articles);
+			
+				$.ajax({url:"/articles",success:function(result){
+					console.log(result);
+					console.log(result.rslts);
+				}});
 			});
 		</script>
 </@head>
