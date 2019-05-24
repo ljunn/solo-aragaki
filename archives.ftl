@@ -10,16 +10,15 @@
 		
 		<script type="text/javascript">
 			console.log("开始渲染归档页面...");
-	
+			var articles;
 			$(document).ready(function(){
-			
 				$.ajax({url:"/articles",success:function(result){
-					var articles=result.rslts.articles;
+					articles=result.rslts.articles;
 					console.log(articles);
 					
 					var oldyear=0;
-					for(var a in articles){
-						console.log(a.articleCreateTime)
+					for(int i=0;i<articles.length;i++){
+						console.log(articles[i].articleCreateTime)
 					}
 				}});
 			});
