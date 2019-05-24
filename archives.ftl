@@ -34,6 +34,13 @@
 	alert(1)
 	console.log("开始渲染归档页面...");
 	
+	$(document).ready(function(){
+		var articles=$.ajax({url:"/articles",async:true});
+		console.log(articles);
+		});
+	});
+	
+	
 	
 </script>
 </html>
