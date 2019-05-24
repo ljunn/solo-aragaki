@@ -16,9 +16,29 @@
 					articles=result.rslts.articles;
 					console.log(articles);
 					var oldyear=0;
-					$.each(articles,function(index,val){
-						console.log(index+' ');
-						console.log(val);
+					$.each(articles,function(index,a){
+						if(a.articleCreateDate.getFullYear()!=oldyear){
+							if(oldyear!=0){
+								$("#content").append("</ul>");
+							}
+							$("#content").append("<ul class="archived-posts">");
+							oldyear=a.articleCreateDate.getFullYear();
+							$("#content").append("<h2>"+oldyear+"</h2>");
+						}
+						console.log($("#content").val());
+						$("#content").append("<li>");
+						$("#content").append(a.articleCreateDate);
+						$("#content").append("<a  href='${servePath}"+a.articlePermalink+"'>"++a.articleAbstractText+"
+								</a> ");
+						if(a.articleTags.length>0){
+							for(var tag in a.articleTags){
+								$("#content").append("<a href='${servePath}/tags/"+tag.tagTitle+"'" >
+											&nbsp;tag.tagTitle
+										</a>");
+							}
+						}
+						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
+						console.log($("#content").val());
 					});
 				}});
 			});
