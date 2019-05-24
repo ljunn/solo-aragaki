@@ -62,7 +62,7 @@
 									</a>");
 						}
 					}
-					$("#content").append("<span>"+a.articleViewCount+"度</span>");
+					$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
 				}
 			}
 		});
