@@ -41,11 +41,8 @@
 			success: function (result) {
 				var articles=result.articles;
 				console.log(articles);
-				articles.sort(function (a,b){
-					return  a.articleCreateDate>b.articleCreateDate?1:-1;
-				});
+				
 			
-			}
 		});
 	})；
 	
