@@ -19,7 +19,7 @@
 					
 					var oldyear=0;
 					for(var a in articles){
-						console.log(a)
+						console.log(a.articleCreateTime)
 					}
 				}});
 			});
