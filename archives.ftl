@@ -18,29 +18,8 @@
 					var oldyear=0;
 					$.each(articles,function(index,a){
 						Date date=new Date(a.articleCreateTime);
-						var year=date.getFullYear();
-						if(year!=oldyear){
-							if(oldyear!=0){
-								$("#content").append("</ul>");
-							}
-							$("#content").append("<ul class="archived-posts">");
-							oldyear=year;
-							$("#content").append("<h2>"+oldyear+"</h2>");
-						}
-						console.log($("#content").val());
-						$("#content").append("<li>");
-						$("#content").append(date.toLocaleString(););
-						$("#content").append("<a  href='${servePath}"+a.articlePermalink+"'>"++a.articleAbstractText+"
-								</a> ");
-						if(a.articleTags.length>0){
-							for(var tag in a.articleTags){
-								$("#content").append("<a href='${servePath}/tags/"+tag.tagTitle+"'" >
-											&nbsp;tag.tagTitle
-										</a>");
-							}
-						}
-						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
-						console.log($("#content").val());
+						console.log(date);
+						
 					});
 				}});
 			});
