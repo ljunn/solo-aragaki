@@ -33,7 +33,21 @@
 <script>
 	alert(1)
 	console.log("开始渲染归档页面...");
-	
+	$(function getArticles(){
+		$.ajax({
+			async: false,
+			url: Label.servePath + "/articles",
+			type: "GET",
+			success: function (result) {
+				var articles=result.articles;
+				console.log(articles);
+				articles.sort(function (a,b){
+					return  a.articleCreateDate>b.articleCreateDate?1:-1;
+				});
+			
+			}
+		});
+	})；
 	
 	
 </script>
