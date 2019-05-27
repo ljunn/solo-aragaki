@@ -52,7 +52,7 @@
 				<span>${article.articleCommentCount}评</span>
 			</span>
 
-			 <div class="post">
+			 <div class="post-body vditor-reset">
 				${article.articleContent}
 				<#if "" != article.articleSign.signHTML?trim>
 					<div>
@@ -78,7 +78,7 @@
 		 </div>
 	</section>
 	
-	<div style="height:200px;">&nbsp;</div>
+	<div >&nbsp;</div>
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
 </div>
