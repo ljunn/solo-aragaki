@@ -38,8 +38,9 @@
 						
 						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>";						
 
-						if(a.articleTags.length>0){
-							$.each(a.articleTags,function(index,tag){
+						if(a.articleTags!=""){
+							var tags[]=a.articleTags.split(",");
+							$.each(tags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag.tagTitle+"'"+" >&nbsp;"+tag.tagTitle+"</a>";
 							});
 						}
