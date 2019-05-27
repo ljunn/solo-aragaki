@@ -34,13 +34,11 @@
 		
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-		 <script src="${staticServePath}/skins/${skinDirName}/js/common.js"></script>
     </@head>
 </head>
 <body>
 <#include "header.ftl">
-<main id="pjax" >
-    <#if pjax><!---- pjax {#pjax} start ----></#if>
+<main >
 	
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
@@ -138,11 +136,9 @@
             </span>
         </div>
     </div>
-<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
 <#include "footer.ftl">
 
-<#if pjax><!---- pjax {#pjax} start ----></#if>
 <@comment_script oId=article.oId commentable=article.commentable>
     page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
     <#if 0 != randomArticlesDisplayCount>
@@ -158,8 +154,5 @@
 Skin.initArticle()
 </@comment_script>
 	
-	
-    
-<#if pjax><!---- pjax {#pjax} end ----></#if>
 </body>
 </html>

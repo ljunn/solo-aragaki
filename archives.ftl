@@ -71,11 +71,11 @@
 
 	
 	
-	<div style="height=200px;">&nbsp;</div>
+
 	
 	</section>
 	
-
+	<div style="height=300px;">&nbsp;</div>
 </main>
 </div>
 <#include "footer.ftl">
