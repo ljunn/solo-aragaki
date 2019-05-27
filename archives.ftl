@@ -41,7 +41,7 @@
 						if(a.articleTags.length>0){
 							$.each(a.articleTags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag.tagTitle+"'"+" >&nbsp;"+tag.tagTitle+"</a>";
-							}
+							});
 						}
 						
 						
