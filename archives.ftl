@@ -17,7 +17,6 @@
 					articles.sort(function(a,b){
 						return b.articleCreateTime-a.articleCreateTime;
 					});
-					console.log(articles);
 					var oldyear=0;
 					var content="";
 					$.each(articles,function(index,a){
@@ -40,7 +39,7 @@
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag+"'"+" >"+tag+"&nbsp;</a>";
-								if(index=tags.length-1){content+=","}
+								if(index!=tags.length-1){content+=","}
 							});
 						}
 						
@@ -54,7 +53,6 @@
 						
 					});
 					console.log(content);
-					$("#content").append(content);
 				}});
 			});
 		</script>
@@ -73,7 +71,7 @@
 
 	
 	
-	<div height=200></div>
+	<div style="height=200px;"></div>
 	
 	</section>
 	
