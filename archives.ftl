@@ -25,22 +25,20 @@
 						var year=date.getFullYear();
 						var content="";
 						if(year!=oldyear){
-							if(oldyear!=0){
-								content+="</ul>";
-							}
+							content+="</ul>";
 							oldyear=year;
-							content+="<h2>"+oldyear+"&nbsp;&nbsp;</h2>";
+							content+="<h2>"+oldyear+"</h2>";
 							content+="<ul class=\"archived-posts\">";
 						}		
 						content+="<li>";
-						content+=date.getMonth()+"."+date.getDate();
+						content+=date.getMonth()+"."+date.getDate()+"&nbsp;";
 						
-						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"&nbsp;&nbsp;</a>";						
+						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"&nbsp;</a>";						
 
 						if(a.articleTags!=""){
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
-								content+="<a href='${servePath}/tags/"+tag+"'"+" >&nbsp;"+tag+"&nbsp;&nbsp;</a>";
+								content+="<a href='${servePath}/tags/"+tag+"'"+" >"+tag+"&nbsp;</a>";
 								if(index=tags.length-1){content+=","}
 							});
 						}
