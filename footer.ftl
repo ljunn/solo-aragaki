@@ -98,8 +98,4 @@
         charset="utf-8"></script>
 
 <#include "../../common-template/label.ftl">
-<script type="text/javascript">
-    Label.tocLabel = "${tocLabel}"
-    Label.siteViewLabel = "${siteViewLabel}"
-</script>
 ${plugins}
