@@ -77,6 +77,8 @@
 			<@comments commentList=articleComments article=article></@comments>
 		 </div>
 	</section>
+	
+	<div style="height:200px;">&nbsp;</div>
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
 </div>
