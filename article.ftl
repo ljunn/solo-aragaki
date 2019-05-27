@@ -22,7 +22,6 @@
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
 		
-		
 	</article>
 
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
