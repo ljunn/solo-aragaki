@@ -38,8 +38,7 @@
 						$("#content").append("<li>");
 						$("#content").append(date.getMonth()+"."+date.getDate());
 						
-						$("#content").append("<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"
-								</a> ");						
+						$("#content").append("<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>");						
 						
 						
 						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
