@@ -38,25 +38,8 @@
 							</a>
 						</#list>
 				</span>
-				
 			<#if>
-			<span class="item">
-				<i class="fa fa-battery-three-quarters"></i>
-				<span>${article.articleViewCount}度</span>
-			</span>
-			<span class="item">
-				<i class="fa fa-comment-o"></i>
-				<span>${article.articleCommentCount}评</span>
-			</span>
-			
-			 <div class="vditor-reset">
-				${article.articleContent}
-				<#if "" != article.articleSign.signHTML?trim>
-					<div>
-						${article.articleSign.signHTML}
-					</div>
-				</#if>
-			 </div>
+
 		</div>
 	</article>
 
