@@ -23,37 +23,37 @@
 						console.log(a.articleCreateTime);
 						var date=new Date(a.articleCreateTime);
 						var year=date.getFullYear();
-						console.log(year);
+						var content="";
 						if(year!=oldyear){
 							if(oldyear!=0){
-								$("#content").append("</ul>");
+								content+="</ul>";
 							}
 							oldyear=year;
-							$("#content").append("<h2>"+oldyear+"</h2>");
-							$("#content").append("<ul class=\"archived-posts\">");
+							content+="<h2>"+oldyear+"</h2>";
+							content+="<ul class=\"archived-posts\">";
 							
 						}		
-						$("#content").append("<li>");
-						$("#content").append(date.getMonth()+"."+date.getDate());
+						content+="<li>";
+						content+=date.getMonth()+"."+date.getDate();
 						
-						$("#content").append("<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>");						
+						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>";						
 
 						if(a.articleTags.length>0){
 							for(var tag in a.articleTags){
-								$("#content").append("<a href='${servePath}/tags/"+tag.tagTitle+"'" >
-											&nbsp;tag.tagTitle
-										</a>");
+								content+="<a href='${servePath}/tags/"+tag.tagTitle+"'"+" >&nbsp;"+tag.tagTitle+"</a>";
 							}
 						}
 						
 						
 						
-						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
+						content+="<span>"+a.articleViewCount+"度</span></li>";
 						console.log($("#content").val());
 						
 						if(index==articles.length-1){
-							$("#content").append("</ul>");
+							content+="</ul>";
 						}
+						
+						$("#content").append(content);
 					});
 				}});
 			});
