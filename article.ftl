@@ -24,7 +24,7 @@
 		<div class="meta">
 			<span class="item">
 				<#setting locale="en_US">
-				<i class="fa fa-calendar-o" ></i> ${article.articleCreateDate?string["MMM d, yyyy"]}
+				
 			</span>
 		
 		</div>
