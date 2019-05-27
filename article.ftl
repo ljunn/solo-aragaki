@@ -7,7 +7,7 @@
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
 	
 	 <link rel="stylesheet"
-              href="${staticServePath}/skins/${skinDirName}/css/base.scss?${staticResourceVersion}"/>
+              href="${staticServePath}/skins/${skinDirName}/css/base.css?${staticResourceVersion}"/>
 	
 	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
         <#if previousArticlePermalink??>
@@ -73,8 +73,9 @@
 	</section>
 	
 	<section id="comments">
-		<@comments commentList=articleComments article=article></@comments>
-	
+		<div class="wrapper1 comment">
+			<@comments commentList=articleComments article=article></@comments>
+		 </div>
 	</section>
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
