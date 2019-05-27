@@ -5,6 +5,10 @@
 <html>
 <head>
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
+	
+	 <link rel="stylesheet"
+              href="${staticServePath}/skins/${skinDirName}/css/base.css?${staticResourceVersion}"/>
+	
 	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
         <#if previousArticlePermalink??>
             <link rel="prev" title="${previousArticleTitle}" href="${servePath}${previousArticlePermalink}">
