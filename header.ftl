@@ -11,7 +11,7 @@
 				<ul>
 					<#list pageNavigations as page>
 						<li>
-							<a href="${servePath}${page.pagePermalink}" target="${page.pageOpenTarget}" >
+							<a href="${servePath}/${page.pagePermalink}" target="${page.pageOpenTarget}" >
 							${page.pageTitle}
 							</a>
 						</li>
