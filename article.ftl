@@ -47,7 +47,15 @@
 				<i class="fa fa-comment-o"></i>
 				<span>${article.articleCommentCount}评</span>
 			</span>
-			
+
+			 <div class="vditor-reset">
+				${article.articleContent}
+				<#if "" != article.articleSign.signHTML?trim>
+					<div>
+						${article.articleSign.signHTML}
+					</div>
+				</#if>
+			 </div>
 		</div>
 	</article>
 
