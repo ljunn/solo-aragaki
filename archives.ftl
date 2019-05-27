@@ -39,7 +39,7 @@
 						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>";						
 
 						if(a.articleTags.length>0){
-							for(var tag in a.articleTags){
+							$.each(a.articleTags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag.tagTitle+"'"+" >&nbsp;"+tag.tagTitle+"</a>";
 							}
 						}
