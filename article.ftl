@@ -52,7 +52,7 @@
 				<span>${article.articleCommentCount}评</span>
 			</span>
 
-			 <div class="post-body vditor-reset">
+			 <div class="post vditor-reset">
 				${article.articleContent}
 				<#if "" != article.articleSign.signHTML?trim>
 					<div>
