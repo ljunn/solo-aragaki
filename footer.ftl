@@ -44,16 +44,14 @@
 		<h3>分门别类</h3>
 		<ul>
 			 <#list mostUsedTags as tag>
-				<#if (tag.index<5)>
+				<#if (tag_index<5)>
 				 <li>
 				 	<a href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}" >
 				 		${tag.tagTitle}
 				 	</a>
 				 	<span>${tag.tagPublishedRefCount}篇</span>
-				 </li>				
-				 	
+				 </li>	
 				</#if>
-
 			 </#list>
 		</ul>
 		<div class="clear"></div>
