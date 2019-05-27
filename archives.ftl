@@ -25,9 +25,9 @@
 						var year=date.getFullYear();
 						var content="";
 						if(year!=oldyear){
-							content+="</ul>";
 							oldyear=year;
 							content+="<h2>"+oldyear+"</h2>";
+							content+="</ul>";
 							content+="<ul class=\"archived-posts\">";
 						}		
 						content+="<li>";
