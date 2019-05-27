@@ -20,8 +20,7 @@
 <body>
 <#include "header.ftl">
 <div class="wrapper" style="margin-top:0px;">
-<main id="pjax" >
-	<#if pjax><!---- pjax {#pjax} start ----></#if>
+<main >
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
 		<div class="meta">
@@ -58,29 +57,26 @@
 			 </div>
 		</div>
 	</article>
+	<section class="pager">
+        <#if previousArticlePermalink??>
+        <a class="pre" href="${servePath}${previousArticlePermalink}" >${previousArticleTitle}</a>
+        </#if>
 
-	<#if pjax><!---- pjax {#pjax} end ----></#if>
+        <#if nextArticlePermalink??>
+         <a class="next" href="${servePath}${nextArticlePermalink}"> ${nextArticleTitle}</a>
+        </#if>
+	</section>
+	
+	<section id="comments">
+		<@comments commentList=articleComments article=article></@comments>
+	
+	</section>
 </main>
 </div>
 <#include "footer.ftl">
 
 
-<#if pjax><!---- pjax {#pjax} start ----></#if>
-<@comment_script oId=article.oId commentable=article.commentable>
-    page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
-    <#if 0 != randomArticlesDisplayCount>
-    page.loadRandomArticles('<h3>RECOMMEND POSTS</h3>');
-    </#if>
-    <#if 0 != externalRelevantArticlesDisplayCount>
-    page.loadExternalRelevantArticles("<#list article.articleTags?split(",") as articleTag>${articleTag}<#if articleTag_has_next>,</#if></#list>",
-    '<h3>HACPAI POSTS</h3>');
-    </#if>
-    <#if 0 != relevantArticlesDisplayCount>
-    page.loadRelevantArticles('${article.oId}', '<h3>RELEVANT POSTS</h3>');
-    </#if>
-Skin.initArticle()
-</@comment_script>
-<#if pjax><!---- pjax {#pjax} end ----></#if>
+
     
 </body>
 </html>
