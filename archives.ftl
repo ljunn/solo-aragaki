@@ -20,7 +20,7 @@
 					console.log(articles);
 					var oldyear=0;
 					$.each(articles,function(index,a){
-						console.log(a.articleCreateTime);
+						
 						var date=new Date(a.articleCreateTime);
 						var year=date.getFullYear();
 						var content="";
@@ -47,10 +47,8 @@
 						
 						content+="<span>"+a.articleViewCount+"度</span></li>";
 						
-						if(index===articles.length-1){
-							content+="</ul>";
-						}
-						
+					
+						console.log(content);
 						$("#content").append(content);
 					});
 				}});
