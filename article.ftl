@@ -21,7 +21,7 @@
 	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
-		<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
+		
 		
 	</article>
 
