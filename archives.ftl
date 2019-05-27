@@ -19,11 +19,12 @@
 					});
 					console.log(articles);
 					var oldyear=0;
+					var content="";
 					$.each(articles,function(index,a){
 						
 						var date=new Date(a.articleCreateTime);
 						var year=date.getFullYear();
-						var content="";
+						
 						if(year!=oldyear){
 							oldyear=year;
 							content+="<h2>"+oldyear+"</h2>";
@@ -47,10 +48,13 @@
 						
 						content+="<span>"+a.articleViewCount+"度</span></li>";
 						
-					
-						console.log(content);
-						$("#content").append(content);
+						if(index===articles.length-1){
+							content+="</ul>";
+						}
+						
 					});
+					console.log(content);
+					$("#content").append(content);
 				}});
 			});
 		</script>
