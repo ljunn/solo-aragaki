@@ -22,6 +22,7 @@
 <aside>
 	<div class=".aside-left.sidebar">
 	
+	 <#if mostCommentArticles??&& (mostCommentArticles?size > 0)>
         <h3>最热文章</h3>
         <ul id="mostCommentArticles">
             <#list mostCommentArticles as article>
@@ -35,6 +36,7 @@
             </#list>
         </ul>
 		<div class="clear"></div>
+    </#if>
 	
 	
 	</div>
@@ -42,12 +44,16 @@
 		<h3>分门别类</h3>
 		<ul>
 			 <#list mostUsedTags as tag>
-				<li>
-					<a href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}" >
-						${tag.tagTitle}
-					</a>
-					<span>${tag.tagPublishedRefCount}篇</span>
-				</li>
+				<#if (tag.index<5)>
+				 <li>
+				 	<a href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}" >
+				 		${tag.tagTitle}
+				 	</a>
+				 	<span>${tag.tagPublishedRefCount}篇</span>
+				 </li>				
+				 	
+				</#if>
+
 			 </#list>
 		</ul>
 		<div class="clear"></div>
