@@ -37,7 +37,16 @@
 						console.log($("#content").val());
 						$("#content").append("<li>");
 						$("#content").append(date.getMonth()+"."+date.getDate());
-
+						
+						
+						
+						
+						$("#content").append("<span>"+a.articleViewCount+"度</span></li>");
+						console.log($("#content").val());
+						
+						if(index==articles.length-1){
+							$("#content").append("</ul>");
+						}
 					});
 				}});
 			});
