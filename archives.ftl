@@ -41,7 +41,8 @@
 						if(a.articleTags!=""){
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
-								content+="<a href='${servePath}/tags/"+tag.tagTitle+"'"+" >&nbsp;"+tag.tagTitle+"</a>";
+								content+="<a href='${servePath}/tags/"+tag+"'"+" >&nbsp;"+tag+"</a>";
+								if(index=tags.length-1){content+=","}
 							});
 						}
 						
