@@ -52,7 +52,7 @@
 						}
 						
 					});
-					console.log(content);
+					$("#content").append(content);
 				}});
 			});
 		</script>
@@ -71,7 +71,7 @@
 
 	
 	
-	<div style="height=200px;"></div>
+	<div style="height=200px;">&nbsp;</div>
 	
 	</section>
 	
