@@ -33,10 +33,10 @@
 						content+="<li>";
 						content+=date.getMonth()+"."+date.getDate()+"&nbsp;";
 						
-						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"&nbsp;</a>";						
+						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleTitle+"&nbsp;</a>";						
 				
 						if(a.articleTags!=""){
-							content+="<i class=\"fa fa-code\" aria-hidden=\"true\"></i>";
+							content+="<i class=\"fa fa-code\" aria-hidden=\"true\"></i> ";
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag+"'"+" >"+tag+"&nbsp;</a>";
