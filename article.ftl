@@ -7,7 +7,7 @@
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
 	
 	 <link rel="stylesheet"
-              href="${staticServePath}/skins/${skinDirName}/css/base.css?${staticResourceVersion}"/>
+              href="${staticServePath}/skins/${skinDirName}/css/base.scss?${staticResourceVersion}"/>
 	
 	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
         <#if previousArticlePermalink??>
