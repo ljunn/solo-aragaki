@@ -48,7 +48,7 @@
 				<span>${article.articleCommentCount}评</span>
 			</span>
 
-			 <div class="vditor-reset">
+			 <div class="vditor-reset post">
 				${article.articleContent}
 				<#if "" != article.articleSign.signHTML?trim>
 					<div>
