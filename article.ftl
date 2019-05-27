@@ -20,7 +20,8 @@
 <body>
 <#include "header.ftl">
 <div class="wrapper" style="margin-top:0px;">
-<main >
+<main  id="pjax">
+	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
 		<div class="meta">
@@ -71,12 +72,18 @@
 		<@comments commentList=articleComments article=article></@comments>
 	
 	</section>
+	<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
 </div>
 <#include "footer.ftl">
 
 
-
+<#if pjax><!---- pjax {#pjax} start ----></#if>
+<@comment_script oId=article.oId commentable=article.commentable>
+    page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
+	Skin.initArticle()
+</@comment_script>
+<#if pjax><!---- pjax {#pjax} end ----></#if>
     
 </body>
 </html>
