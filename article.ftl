@@ -27,16 +27,16 @@
 		<h1>${article.articleTitle}</h1>
 		<div class="meta">
 			<span class="item">
-				<i class="fa fa-calendar-o"></i>
-				${article.articleCreateDate?string('yyyy.MM.dd')}
+				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
 			</span>
-			<#if article.articleTags??>
+			<#if article.articleTags?? && article.articleTags != "">
 				<span class="item">
-					<i class="fa fa-code"></i>
-                    <#list article.articleTags?split(",") as articleTag>
-                        <a rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
-                            ${articleTag}</a><#if articleTag_has_next>,</#if>
-                    </#list>
+						<i class="fa fa-code" aria-hidden="true"></i>
+						<#list article.articleTags?split(",") as articleTag>
+							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
+								${articleTag}<#if articleTag_has_next>,</#if>
+							</a>
+						</#list>
 				</span>
 				
 			<#if>
