@@ -76,8 +76,4 @@
 <script type="text/javascript" src="${staticServePath}/js/common${miniPostfix}.js?${staticResourceVersion}"
         charset="utf-8"></script>
 <#include "../../common-template/label.ftl">
-<script type="text/javascript">
-    Label.tocLabel = "${tocLabel}"
-    Label.siteViewLabel = "${siteViewLabel}"
-</script>
 ${plugins}
