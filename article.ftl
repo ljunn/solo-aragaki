@@ -20,49 +20,20 @@
 <body>
 <#include "header.ftl">
 <div class="wrapper" style="margin-top:0px;">
-<main >
+<main id="pjax" >
+	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
-		<div class="meta">
-			<span class="item">
-				<i>fa.fa-calendar-o</i>
-				${article.articleCreateDate?string('yyyy.MM.dd')}
-			</span>
-			<#if article.articleTags?size>0>
-				<span class="item">
-					<i>fa.fa-code</i>
-                    <#list article.articleTags?split(",") as articleTag>
-                        <a rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
-                            ${articleTag}</a><#if articleTag_has_next>,</#if>
-                    </#list>
-				</span>
-				
-			<#if>
-			<span class="item">
-				<i>fa.fa-battery-three-quarters</i>
-				<span>${article.articleViewCount}度</span>
-			</span>
-			<span class="item">
-				<i>fa.fa.fa-comment-o</i>
-				<span>${article.articleCommentCount}评</span>
-			</span>
-			
-			  <div class="vditor-reset">
-				${article.articleContent}
-				<#if "" != article.articleSign.signHTML?trim>
-					<div>
-						${article.articleSign.signHTML}
-					</div>
-				</#if>
-				</div>
-		</div>
-	</article>
-	
 
+	</article>
+
+	<#if pjax><!---- pjax {#pjax} end ----></#if>
 </main>
 </div>
 <#include "footer.ftl">
 
+
+<#if pjax><!---- pjax {#pjax} start ----></#if>
 <@comment_script oId=article.oId commentable=article.commentable>
     page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
     <#if 0 != randomArticlesDisplayCount>
@@ -77,6 +48,7 @@
     </#if>
 Skin.initArticle()
 </@comment_script>
-	
+<#if pjax><!---- pjax {#pjax} end ----></#if>
+    
 </body>
 </html>
