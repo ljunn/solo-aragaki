@@ -25,12 +25,7 @@
 	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
-		<div class="meta">
-			<span class="item">
-				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
-			</span>
 		
-		</div>
 	</article>
 
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
