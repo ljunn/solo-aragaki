@@ -29,15 +29,25 @@
 				<#setting locale="en_US">
 				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
 			</span>
-				<span class="item">
+			<span class="item">
 						<i class="fa fa-code" aria-hidden="true"></i>
 						<#list article.articleTags?split(",") as articleTag>
 							<a rel="tag"  href="${servePath}/tags/${articleTag?url('UTF-8')}">
 								${articleTag}<#if articleTag_has_next>,</#if>
 							</a>
 						</#list>
-				</span>
+			</span>
 
+			<span class="item">
+				<i class="fa fa-battery-three-quarters"></i>
+				<span>${article.articleViewCount}度</span>
+			</span>
+			
+			<span class="item">
+				<i class="fa fa-comment-o"></i>
+				<span>${article.articleCommentCount}评</span>
+			</span>
+			
 		</div>
 	</article>
 
