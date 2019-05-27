@@ -29,7 +29,6 @@
 				<#setting locale="en_US">
 				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
 			</span>
-			<#if article.articleTags?? && article.articleTags != "">
 				<span class="item">
 						<i class="fa fa-code" aria-hidden="true"></i>
 						<#list article.articleTags?split(",") as articleTag>
@@ -38,7 +37,6 @@
 							</a>
 						</#list>
 				</span>
-			<#if>
 
 		</div>
 	</article>
