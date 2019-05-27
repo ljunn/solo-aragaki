@@ -4,6 +4,7 @@
 <html>
 <head>
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
+	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
         <link rel="stylesheet"
               href="${staticServePath}/skins/${skinDirName}/css/base.css?${staticResourceVersion}"/>
         <#if previousArticlePermalink??>
@@ -24,7 +25,39 @@
 	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
-
+		<div class="meta">
+			<span class="item">
+				<i class="fa fa-calendar-o"></i>
+				${article.articleCreateDate?string('yyyy.MM.dd')}
+			</span>
+			<#if article.articleTags??>
+				<span class="item">
+					<i class="fa fa-code"></i>
+                    <#list article.articleTags?split(",") as articleTag>
+                        <a rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
+                            ${articleTag}</a><#if articleTag_has_next>,</#if>
+                    </#list>
+				</span>
+				
+			<#if>
+			<span class="item">
+				<i class="fa fa-battery-three-quarters"></i>
+				<span>${article.articleViewCount}度</span>
+			</span>
+			<span class="item">
+				<i class="fa fa-comment-o"></i>
+				<span>${article.articleCommentCount}评</span>
+			</span>
+			
+			  <div class="vditor-reset">
+				${article.articleContent}
+				<#if "" != article.articleSign.signHTML?trim>
+					<div>
+						${article.articleSign.signHTML}
+					</div>
+				</#if>
+			  </div>
+		</div>
 	</article>
 
 	<#if pjax><!---- pjax {#pjax} end ----></#if>

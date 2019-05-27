@@ -28,7 +28,7 @@
 						<span>&nbsp;${article.articleViewCount}度</span>
 					</span>
 					<span class="item">
-						<i class="fa fa.fa-comment-o" aria-hidden="true"></i>
+						<i class="fa fa-comment-o" aria-hidden="true"></i>
 						<span>&nbsp;${article.articleCommentCount}评</span>
 					</span>
 				</div>

@@ -36,14 +36,13 @@
 						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"&nbsp;</a>";						
 				
 						if(a.articleTags!=""){
-							content+="<i class=\"fa fa-code\" aria-hidden=\"true\"></i>"'
+							content+="<i class=\"fa fa-code\" aria-hidden=\"true\"></i>";
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
 								content+="<a href='${servePath}/tags/"+tag+"'"+" >"+tag+"&nbsp;</a>";
 								if(index!=tags.length-1){content+=","}
 							});
 						}
-						
 						
 						
 						content+="<span>"+a.articleViewCount+"度</span></li>";
