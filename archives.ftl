@@ -29,19 +29,18 @@
 								content+="</ul>";
 							}
 							oldyear=year;
-							content+="<h2>"+oldyear+"</h2>";
+							content+="<h2>"+oldyear+"&nbsp;&nbsp;</h2>";
 							content+="<ul class=\"archived-posts\">";
-							
 						}		
 						content+="<li>";
 						content+=date.getMonth()+"."+date.getDate();
 						
-						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"</a>";						
+						content+="<a  href=\"${servePath}"+a.articlePermalink+"\">"+a.articleAbstractText+"&nbsp;&nbsp;</a>";						
 
 						if(a.articleTags!=""){
 							var tags=a.articleTags.split(",");
 							$.each(tags,function(index,tag){
-								content+="<a href='${servePath}/tags/"+tag+"'"+" >&nbsp;"+tag+"</a>";
+								content+="<a href='${servePath}/tags/"+tag+"'"+" >&nbsp;"+tag+"&nbsp;&nbsp;</a>";
 								if(index=tags.length-1){content+=","}
 							});
 						}
@@ -49,9 +48,8 @@
 						
 						
 						content+="<span>"+a.articleViewCount+"度</span></li>";
-						console.log($("#content").val());
 						
-						if(index==articles.length-1){
+						if(index===articles.length-1){
 							content+="</ul>";
 						}
 						
@@ -74,7 +72,8 @@
 	<div class="meta">本博客共有${statistic.statisticPublishedBlogArticleCount}篇文章</div>
 
 	
-
+	
+	<div height=200></div>
 	
 	</section>
 	
