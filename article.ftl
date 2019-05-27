@@ -3,7 +3,6 @@
 <head>
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
 	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
-     
         <#if previousArticlePermalink??>
             <link rel="prev" title="${previousArticleTitle}" href="${servePath}${previousArticlePermalink}">
         </#if>
@@ -25,7 +24,7 @@
 		<div class="meta">
 			<span class="item">
 				<#setting locale="en_US">
-				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
+				<i class="fa fa-calendar-o" ></i> ${article.articleCreateDate?string["MMM d, yyyy"]}
 			</span>
 		
 		</div>
