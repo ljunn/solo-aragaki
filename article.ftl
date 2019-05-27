@@ -1,12 +1,9 @@
-<#include "../../common-template/macro-common_head.ftl">
-<#include "../../common-template/macro-comment_script.ftl">
 <!DOCTYPE html>
 <html>
 <head>
     <@head title="${article.articleTitle} - ${blogTitle}" description="${article.articleAbstract?html}">
 	    <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
-        <link rel="stylesheet"
-              href="${staticServePath}/skins/${skinDirName}/css/base.css?${staticResourceVersion}"/>
+     
         <#if previousArticlePermalink??>
             <link rel="prev" title="${previousArticleTitle}" href="${servePath}${previousArticlePermalink}">
         </#if>
@@ -25,7 +22,13 @@
 	<#if pjax><!---- pjax {#pjax} start ----></#if>
 	<article class="content">
 		<h1>${article.articleTitle}</h1>
+		<div class="meta">
+			<span class="item">
+				<#setting locale="en_US">
+				<i class="fa fa-calendar-o" ></i>${article.articleCreateDate?string('yyyy.MM.dd')}
+			</span>
 		
+		</div>
 	</article>
 
 	<#if pjax><!---- pjax {#pjax} end ----></#if>
