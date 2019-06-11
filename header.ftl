@@ -17,6 +17,12 @@
 						</li>
 					</#list>
 						<li>
+							<a href="${servePath}/archives" >
+								归档
+							</a>
+						</li>
+					
+						<li>
 							<a href="${servePath}/search" >
 								搜索
 							</a>
