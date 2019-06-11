@@ -88,7 +88,6 @@
 <#if pjax><!---- pjax {#pjax} start ----></#if>
 <@comment_script oId=article.oId commentable=article.commentable>
     page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
-	Skin.initArticle()
 </@comment_script>
 <#if pjax><!---- pjax {#pjax} end ----></#if>
     
