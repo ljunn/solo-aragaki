@@ -276,517 +276,644 @@ nav ul li a {
 	line-height:2em;
 	border-top:2px solid #555
 }
+
+
 nav ul li a:hover {
-	font-weight:bold;
-	color:#fff;
+	font-weight: bold;
+	color: #fff;
 }
+
 main section.content,article {
-	padding:0 5%
+	padding: 0 5%
 }
+
 main section.content h1,article h1 {
-	margin-bottom:0.3em
+	margin-bottom: 0.3em
 }
+
 main section.content .meta,article .meta {
-	color:#bbb;
-	font-size:0.8em;
-	padding:20px 0 40px 0
+	color: #bbb;
+	font-size: 0.8em;
+	padding: 20px 0 40px 0
 }
+
 main section.content .meta a,article .meta a {
-	margin:0 0.3em
+	margin: 0 0.3em
 }
+
 main section.content .meta .item,article .meta .item {
-	margin-right:10px
+	margin-right: 10px
 }
+
 main section.content h2 span,article h2 span {
-	font-size:0.53em;
-	margin-left:0.3em;
-	color:#bbb;
-	font-weight:normal
+	font-size: 0.53em;
+	margin-left: 0.3em;
+	color: #bbb;
+	font-weight: normal
 }
+
 main section.content h2:before,article h2:before {
-	content:"# ";
-	color:#555
+	content: "# ";
+	color: #555
 }
+
 main section.content h3:before,article h3:before {
-	content:"## ";
-	color:#555
+	content: "## ";
+	color: #555
 }
+
 main section.content h4:before,article h4:before {
-	content:"### ";
-	color:#555
+	content: "### ";
+	color: #555
 }
+
 main section.content ul span,article ul span {
-	font-size:0.8em;
-	margin-left:0.3em
+	font-size: 0.8em;
+	margin-left: 0.3em
 }
+
 main section.content ul time,article ul time {
-	margin-right:0.3em
+	margin-right: 0.3em
 }
+
 main section.content ul ol,main section.content ol ul,main section.content ul ul,article ul ol,article ol ul,article ul ul {
-	margin-left:0
+	margin-left: 0
 }
+
 main section.content .info span,article .info span {
-	margin:0 0 2em;
-	border:1px solid #eee;
-	padding:15px 20px;
-	color:#bbb;
-	display:block
+	margin: 0 0 2em;
+	border: 1px solid #eee;
+	padding: 15px 20px;
+	color: #bbb;
+	display: block
 }
+
 article.content {
-	font-size:.875em;
-	padding-top:50px
+	font-size: .875em;
+	margin-top: 50px
 }
+
 article.content h1,article.content h2,article.content h3,article.content h4,article.content h5,article.content h6,article.content p,article.content dl,article.content legend,article.content ul,article.content ol {
-	padding:0 5%
+	padding: 0 5%
 }
+
 article.content h2 {
-	margin:2em 0 1.2em
+	margin: 2em 0 1.2em
 }
+
 article.content h3 {
-	margin:1.8em 0 1em
+	margin: 1.8em 0 1em
 }
+
 article.content h1 {
-	font-size:1.4em;
-	margin:1em 0 0.8em;
-	padding:0 5%;
-	text-align:left
+	font-size: 1.4em;
+	margin: 1em 0 0.8em;
+	padding: 0 5%;
+	text-align: left
 }
+
 .article-list article h2:before {
-	content:"" !important
+	content: "" !important
 }
+
 section.content .meta,article.content .meta {
-	border-bottom:0;
-	padding:20px 0 40px 5%
+	border-bottom: 0;
+	padding: 20px 0 40px 5%
 }
+
 article {
-	padding-left:0;
-	padding-right:0
+	padding-left: 0;
+	padding-right: 0
 }
+
 article ul p,article ol p {
-	padding:0;
-	margin:0 auto
+	padding: 0;
+	margin: 0 auto
 }
+
 article blockquote p,article blockquote ul,article blockquote ol {
-	padding:0
+	padding: 0
 }
+
 article hr {
-	margin:1em 5%
+	margin: 1em 5%
 }
+
 article figure {
-	text-align:center
+	text-align: center
 }
+
 article figure img {
-	max-width:100%;
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee
+	max-width: 100%;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee
 }
+
 article figure figcaption {
-	font-size:0.8em;
-	color:#bbb;
-	margin-top:-5px;
-	margin-bottom:1em;
-	padding:0 5%;
-	line-height:1.8em
+	font-size: 0.8em;
+	color: #bbb;
+	margin-top: -5px;
+	margin-bottom: 1em;
+	padding: 0 5%;
+	line-height: 1.8em
 }
+
 article img {
-	max-width:100%
+	max-width: 100%
 }
+
 article iframe,article embed {
-	width:100%;
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
-	margin:1em 0
+	width: 100%;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin: 1em 0
 }
+
 article .post a {
-	border-bottom:1px solid;
-	padding:3px
-	color:#1F1F1F
+	border-bottom: 1px solid;
+	padding: 3px
 }
+
 article .post sup a,article .post sub a {
-	border-bottom:0;
-	padding:0
+	border-bottom: 0;
+	padding: 0
 }
+
 article .post sup a::before,article .post sub a::before {
-	content:"["
+	content: "["
 }
+
 article .post sup a::after,article .post sub a::after {
-	content:"]"
+	content: "]"
 }
+
 article .toc {
-	margin:0 5% 2em;
-	border:1px solid #eee;
-	padding:15px 20px 0
+	margin: 0 5% 2em;
+	border: 1px solid #eee;
+	padding: 15px 20px 0
 }
+
 article .toc ul {
-	list-style:circle;
-	padding:0;
-	color:#bbb;
-	margin-left:1em
+	list-style: circle;
+	padding: 0;
+	color: #bbb;
+	margin-left: 1em
 }
+
 article .toc a {
-	border-bottom:none
+	border-bottom: none
 }
+
 article ul,article ol {
-	color:inherit;
-	margin-left:2em
+	color: inherit;
+	margin-left: 2em
 }
+
 article ul ul,article ol ol,article ul ol,article ol ul {
-	margin-bottom:0;
-	padding:0
+	margin-bottom: 0;
+	padding: 0
 }
+
 article .footnotes ul,article .footnotes ol {
-	margin-left:1em;
-	color:#bbb
+	margin-left: 1em;
+	color: #bbb
 }
+
 article ul span {
-	font-size:inherit;
-	margin-left:inherit
+	font-size: inherit;
+	margin-left: inherit
 }
+
 .md_line {
-	letter-spacing:0.5px
+	letter-spacing: 0.5px
 }
+
 .list-pager {
-	padding:30px 20px 30px 20px;
-	font-size:.875em;
-	margin:0 30px
+	padding: 30px 20px 30px 20px;
+	font-size: .875em;
+	margin: 0 30px
 }
+
 .list-pager .next {
-	float:right
+	float: right
 }
+
 .list-pager .next i {
-	margin-left:8px
+	margin-left: 8px
 }
+
 .list-pager .pre {
-	float:left
+	float: left
 }
+
 .list-pager .pre i {
-	margin-right:8px
+	margin-right: 8px
 }
+
 section.pager {
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
-	text-align:center;
-	overflow:auto;
-	margin:2em 0 0;
-	font-size:.875em
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	overflow: auto;
+	margin: 2em 0 0;
+	font-size: .875em
 }
+
 section.pager .full_paginator.full_pager a {
-	padding-left:1em;
-	padding-right:1em
+	padding-left: 1em;
+	padding-right: 1em
 }
+
 section.pager a {
-	padding:1em 0;
-	display:inline-block
+	padding: 1em 0;
+	display: inline-block
 }
+
 section.pager a.current {
-	color:#555
+	color: #555
 }
+
 section.pager a:hover {
-	background:#f7f7f7
+	background: #f7f7f7
 }
+
 section.pager a.pre,section.pager span.pre {
-	float:left;
-	text-align:left;
-	width:45%;
-	padding-left:5%
+	float: left;
+	text-align: left;
+	width: 45%;
+	padding-left: 5%
 }
+
 section.pager a.pre::before,section.pager span.pre::before {
-	content:"\2039";
-	font-size:1.3em;
-	padding-right:5px;
-	font-weight:bold;
-	line-height:1em
+	content: "\2039";
+	font-size: 1.3em;
+	padding-right: 5px;
+	font-weight: bold;
+	line-height: 1em
 }
+
 section.pager a.next,section.pager span.next {
-	float:right;
-	text-align:right;
-	width:45%;
-	padding-right:5%
+	float: right;
+	text-align: right;
+	width: 45%;
+	padding-right: 5%
 }
+
 section.pager a.next::after,section.pager span.next::after {
-	content:"\203A";
-	font-size:1.3em;
-	padding-left:5px;
-	font-weight:bold;
-	line-height:1em
+	content: "\203A";
+	font-size: 1.3em;
+	padding-left: 5px;
+	font-weight: bold;
+	line-height: 1em
 }
+
 section.pager span {
-	color:#bbb;
-	padding:1em 0
+	color: #bbb;
+	padding: 1em 0
 }
+
 section.pager .paginator a {
-	padding:1em 0.5em
+	padding: 1em 0.5em
 }
+
 section#comments {
-	padding:0 5%;
-	background:#f7f7f7;
-	border-bottom:1px solid #eee;
-	padding-top:0.5em
+	padding: 0 5%;
+	background: #f7f7f7;
+	border-bottom: 1px solid #eee;
+	padding-top: 0.5em
 }
+
 .doc_comments {
-	margin-top:0 !important;
-	padding:0 !important
+	margin-top: 0 !important;
+	padding: 0 !important
 }
+
 .doc_comments .comments_block_title {
-	display:none
+	display: none
 }
+
 .doc_comments #new_comment_form .comment_trigger .trigger_title {
-	margin-left:62px !important;
-	line-height:48px !important
+	margin-left: 62px !important;
+	line-height: 48px !important
 }
+
 .doc_comments #new_comment_form {
-	font-size:.875em;
-	background-color:inherit !important;
-	border:0 !important;
-	margin:15px 0 !important
+	font-size: .875em;
+	background-color: inherit !important;
+	border: 0 !important;
+	margin: 15px 0 !important
 }
+
 .doc_comments #new_comment_form .input_body {
-	background-color:inherit !important;
-	border-top:1px solid #eee
+	background-color: inherit !important;
+	border-top: 1px solid #eee
 }
+
 .doc_comments #new_comment_form textarea,.doc_comments #new_comment_form .comment_trigger,.doc_comments #new_comment_form .input_body {
-	padding:0 !important
+	padding: 0 !important
 }
+
 .doc_comments #new_comment_form .input_body li input {
-	padding-left:0 !important;
-	padding-right:1em !important
+	padding-left: 0 !important;
+	padding-right: 1em !important
 }
+
 .doc_comments #new_comment_form .input_body li {
-	margin-top:8px !important
+	margin-top: 8px !important
 }
+
 .doc_comments #new_comment_form .comment_submit_button {
-	font-size:.875em;
-	margin:8px 0 !important;
-	border-radius:0 !important;
-	cursor:pointer
+	font-size: .875em;
+	margin: 8px 0 !important;
+	border-radius: 0 !important;
+	cursor: pointer
 }
+
 .doc_comments .comments ul {
-	margin:0
+	margin: 0
 }
+
 .doc_comments .comments .comment {
-	padding:0 !important;
-	background-color:inherit !important;
-	margin:0 !important;
-	border-radius:0 !important;
-	border:0 !important;
-	border-top:1px solid #eee !important
+	padding: 0 !important;
+	background-color: inherit !important;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	border: 0 !important;
+	border-top: 1px solid #eee !important
 }
+
 .doc_comments .comments .comment .author {
-	padding:1em 0 0 !important
+	padding: 1em 0 0 !important
 }
+
 .doc_comments .comments .comment .author .author-name {
-	float:left
+	float: left
 }
+
 .doc_comments .comments .comment .author b {
-	background-color:inherit !important;
-	color:#999 !important;
-	-webkit-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-o-transition:.5s;
-	transition:.5s;
-	margin-left:62px !important;
-	font-size:0.9em !important;
-	font-weight:bold !important
+	background-color: inherit !important;
+	color: #999 !important;
+	-webkit-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	margin-left: 62px !important;
+	font-size: 0.9em !important;
+	font-weight: bold !important
 }
+
 .doc_comments .comments .comment .author b:hover {
-	color:red !important
+	color: red !important
 }
+
 .doc_comments .comments .comment .author .reply {
-	font-size:0.75em !important;
-	background:inherit !important;
-	color:transparent !important;
-	-webkit-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-o-transition:.5s;
-	transition:.5s
+	font-size: 0.75em !important;
+	background: inherit !important;
+	color: transparent !important;
+	-webkit-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s
 }
+
 .doc_comments .comments .comment .author .reply::before {
-	content:"\56DE \590D";
-	color:#fff;
-	margin-right:-2em;
-	background:#ddd;
-	padding:3px 4px 2px
+	content: "\56DE \590D";
+	color: #fff;
+	margin-right: -2em;
+	background: #ddd;
+	padding: 3px 4px 2px
 }
+
 .doc_comments .comments .comment .author small {
-	float:left;
-	margin:0 !important;
-	color:#ccc;
-	padding-top:4px;
-	font-size:0.8em
+	float: left;
+	margin: 0 !important;
+	color: #ccc;
+	padding-top: 4px;
+	font-size: 0.8em
 }
+
 .doc_comments .comments .comment .author .avatar,.doc_comments #new_comment_form .comment_trigger .avatar {
-	width:48px !important;
-	height:48px !important
+	width: 48px !important;
+	height: 48px !important
 }
+
 .doc_comments .comments .comment .author .avatar img,.doc_comments #new_comment_form .comment_trigger .avatar img {
-	border-radius:5% !important
+	border-radius: 5% !important
 }
+
 .doc_comments .comments .comment .author .avatar {
-	top:1em !important
+	top: 1em !important
 }
+
 .doc_comments .comments .comment .p_part {
-	margin:0 0 0.7em !important
+	margin: 0 0 0.7em !important
 }
+
 .doc_comments .comments .comment .comment_content {
-	color:#333;
-	margin-left:62px;
-	margin-top:21px
+	color: #333;
+	margin-left: 62px;
+	margin-top: 21px
 }
+
 .doc_comments .comments .sub_comments {
-	padding-left:62px !important
+	padding-left: 62px !important
 }
+
 .doc_comments .comments .sub_comments .sub_comments .sub_comments {
-	padding-left:0 !important
+	padding-left: 0 !important
 }
+
 aside {
-	overflow:auto;
-	padding-top:20px;
-	max-width:680px;
-	margin:0 auto
+	overflow: auto;
+	padding-top: 20px;
+	max-width: 680px;
+	margin: 0 auto
 }
+
 aside .aside-left {
-	width:75%
+	width: 75%
 }
+
 aside .aside-right {
-	width:25%
+	width: 25%
 }
+
 aside .sidebar {
-	float:left
+	float: left
 }
+
 aside .sidebar h3 {
-	font-weight:400;
-	font-size:14px
+	font-weight: 400;
+	font-size: 14px
 }
+
 aside .sidebar li {
-	font-size:12px;
-	float:left;
-	width:50%;
-	display:block
+	font-size: 12px;
+	float: left;
+	width: 50%;
+	display: block
 }
+
 aside span {
-	font-size:0.8em;
-	margin-left:0.3em;
-	color:#bbb
+	font-size: 0.8em;
+	margin-left: 0.3em;
+	color: #bbb
 }
+
 .article-list {
-	padding:0 20px;
-	margin:0 30px
+	padding: 0 20px;
+	margin: 0 30px
 }
+
 .article-list article {
-	padding-top:50px
+	margin-top: 50px
 }
+
 .article-list article h2 {
-	line-height:30px;
-	font-weight:600
+	line-height: 30px;
+	font-weight: 600
 }
+
 .article-list article h2 a {
-	color:#1F1F1F
+	color: #1F1F1F
 }
+
 .article-list article .meta {
-	border-bottom:1px solid #F3F3F3
+	border-bottom: 1px solid #F3F3F3
 }
+
 .excerpt p {
-	color:#333;
-	font-size:0.875em;
-	letter-spacing:.2px;
-	line-height:2em;
-	text-align:left
+	color: #333;
+	font-size: 0.875em;
+	letter-spacing: .2px;
+	line-height: 2em;
+	text-align: left
 }
+
 .archived-posts {
-	font-size:.875em
+	font-size: .875em
 }
+
 footer {
-	text-align:center;
-	padding:60px 0px;
-	font-size:0.8em;
-	line-height:3em;
-	color:#bbb
+	text-align: center;
+	padding: 60px 0px;
+	font-size: 0.8em;
+	line-height: 3em;
+	color: #bbb
 }
+
 footer .powered_by {
-	line-height:1.2em
+	line-height: 1.2em
 }
+
 footer .footer_slogan {
-	padding-top:25px;
-	max-width:120px;
-	margin:0 auto;
-	padding-bottom:10px
+	padding-top: 25px;
+	max-width: 120px;
+	margin: 0 auto;
+	padding-bottom: 10px
 }
+
 #back_to_top {
-	background:#fff;
-	box-shadow:0px 10px 20px 0px rgba(236,236,236,0.86)
+	background: #fff;
+	box-shadow: 0px 10px 20px 0px rgba(236,236,236,0.86)
 }
+
 #back_to_top span {
-	color:#ccc
+	color: #ccc
 }
-@media only screen and (max-width:600px) {
+
+@media only screen and (max-width: 600px) {
 	.wrapper {
-	margin-top:0
+		margin-top: 0
+	}
+
+	header .logo {
+		display: none
+	}
+
+	header .description {
+		float: none
+	}
+
+	header .description h1,header .description h2 {
+		text-align: center
+	}
+
+	.article-list {
+		margin: 0;
+		padding: 0
+	}
+
+	.article-list .meta {
+		padding-left: 5%;
+		padding-right: 5%
+	}
+
+	aside .sidebar {
+		width: 100%;
+		float: none
+	}
+
+	pre,main section.content,aside {
+		padding: 0 5%
+	}
+
+	aside {
+		padding-top: 20px
+	}
+
+	pre {
+		padding-top: 1em;
+		padding-bottom: 1em
+	}
+
+	article h1,article h2,article h3,article h4,article h5,article h6,article p,article dl,article legend,article ul,article ol {
+		padding: 0 5%
+	}
+
+	blockquote {
+		padding: 0 25px 1em 20px;
+		border-left: 5px solid #ddd
+	}
+
+	blockquote::before {
+		margin-left: -20px
+	}
+
+	.doc_comments .comments .comment .author .avatar,.doc_comments #new_comment_form .comment_trigger .avatar {
+		width: 36px !important;
+		height: 36px !important
+	}
+
+	.doc_comments .comments .comment .comment_content,.doc_comments #new_comment_form .comment_trigger .trigger_title,.doc_comments .comments .comment .author b {
+		margin-left: 48px !important
+	}
+
+	.doc_comments .comments .comment .p_part {
+		font-size: 0.95em;
+		line-height: 2em
+	}
+
+	.doc_comments .comments .sub_comments {
+		padding-left: 48px !important
+	}
+
+	.doc_comments .comments .sub_comments .sub_comments {
+		padding-left: 0 !important
+	}
 }
-header .logo {
-	display:none
-}
-header .description {
-	float:none
-}
-header .description h1,header .description h2 {
-	text-align:center
-}
-.article-list {
-	margin:0;
-	padding:0
-}
-.article-list .meta {
-	padding-left:5%;
-	padding-right:5%
-}
-aside .sidebar {
-	width:100%;
-	float:none
-}
-pre,main section.content,aside {
-	padding:0 5%
-}
-aside {
-	padding-top:20px
-}
-pre {
-	padding-top:1em;
-	padding-bottom:1em
-}
-article h1,article h2,article h3,article h4,article h5,article h6,article p,article dl,article legend,article ul,article ol {
-	padding:0 5%
-}
-blockquote {
-	padding:0 25px 1em 20px;
-	border-left:5px solid #ddd
-}
-blockquote::before {
-	margin-left:-20px
-}
-.doc_comments .comments .comment .author .avatar,.doc_comments #new_comment_form .comment_trigger .avatar {
-	width:36px !important;
-	height:36px !important
-}
-.doc_comments .comments .comment .comment_content,.doc_comments #new_comment_form .comment_trigger .trigger_title,.doc_comments .comments .comment .author b {
-	margin-left:48px !important
-}
-.doc_comments .comments .comment .p_part {
-	font-size:0.95em;
-	line-height:2em
-}
-.doc_comments .comments .sub_comments {
-	padding-left:48px !important
-}
-.doc_comments .comments .sub_comments .sub_comments {
-	padding-left:0 !important
-}
-}svg {
+
+svg {
 	height:20px;
 	width:20px;
 }
 
 .post-body *{
 	color: #000000;
+}
+
+.post-body a:hover{
+	color: cadetblue;
 }
