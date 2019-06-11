@@ -782,9 +782,7 @@ blockquote::before {
 .doc_comments .comments .sub_comments .sub_comments {
 	padding-left:0 !important
 }
-
-
-svg {
+}svg {
 	height:20px;
 	width:20px;
 }
