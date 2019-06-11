@@ -80,6 +80,7 @@ a {
 	-moz-transition:.5s;
 	-o-transition:.5s;
 	transition:.5s;
+	color:#999
 }
 a:hover {
 	color:#555
@@ -400,6 +401,7 @@ article iframe,article embed {
 article .post a {
 	border-bottom:1px solid;
 	padding:3px
+	color:#1F1F1F
 }
 article .post sup a,article .post sub a {
 	border-bottom:0;
