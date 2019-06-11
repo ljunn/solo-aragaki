@@ -279,7 +279,6 @@ nav ul li a {
 nav ul li a:hover {
 	font-weight:bold;
 	color:#fff;
-	background:#555
 }
 main section.content,article {
 	padding:0 5%
@@ -786,4 +785,8 @@ blockquote::before {
 }svg {
 	height:20px;
 	width:20px;
+}
+
+.post-body *{
+	color: #000000;
 }
