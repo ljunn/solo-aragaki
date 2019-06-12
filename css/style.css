@@ -277,7 +277,7 @@ nav ul li a {
 }
 nav ul li a:hover {
 	font-weight:bold;
-	color:#fff;
+	color:#5F9EA0;
 }
 main section.content,article {
 	padding:0 5%
@@ -776,4 +776,8 @@ pre {
 .pagination__item{color:#FFFFFF;border-radius:3px;padding:0 10px;line-height:24px;display:inline-block;margin:0 0 10px 10px;background-color:#BBBBBB}
 .pagination__item--text{background-color:rgba(255,255,255,0.8);color:#7266BA}
 .pagination__item--current{background-color:#5F9EA0}
-.pagination a.pagination__item:hover{text-decoration:none;background-color:#5F9EA0}
+.pagination a.pagination__item:hover{text-decoration:none;background-color:#5F9EA0;border-top: 1px solid #eee;}
+
+.footer > .ft__center > .user__site{display: inline-block;margin: 0 10px;}
+
+.article-list article:last-child .meta { border-bottom-width: 0}
