@@ -775,10 +775,9 @@ pre {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	.wrapper {
 		margin-top: 0;
-		width: 100%;
 	}
 
 	header .logo {
@@ -856,5 +855,3 @@ pre {
 		padding-left: 0 !important
 	}
 }
-
-/* 对不起他不能支持移动端.... */
