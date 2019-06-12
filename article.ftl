@@ -72,7 +72,7 @@
         </#if>
 	</section>
 	
-	<section id="comments">
+	<section id="comments1">
 		<div class="wrapper1 comment">
 			<@comments commentList=articleComments article=article></@comments>
 		 </div>
