@@ -1,9 +1,9 @@
 <aside>
- <#if mostCommentArticles??>
+ <#if mostViewCountArticles??>
 	<div class=".aside-left.sidebar">
         <h3>最热文章</h3>
         <ul >
-            <#list mostCommentArticles as article>
+            <#list mostViewCountArticles as article>
             <li>
                 <a rel="nofollow" title="${article.articleTitle}"
                    href="${servePath}${article.articlePermalink}">
