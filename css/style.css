@@ -777,7 +777,8 @@ pre {
 
 @media screen and (max-width: 600px) {
 	.wrapper {
-		margin-top: 0
+		margin-top: 0;
+		width: 100%;
 	}
 
 	header .logo {
