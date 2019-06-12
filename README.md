@@ -7,3 +7,6 @@
 
 ![screenshot](preview.png)
 
+水平有限.... 不能支持移动端 ...  
+
+![screenshot](time.jpg)
