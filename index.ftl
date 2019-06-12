@@ -12,8 +12,12 @@
     </@head>
 </head>
 <body >
-<#include "header.ftl">
-<#include "article-list.ftl">
-<#include "footer.ftl">
+<div id="pjax">
+	<#if pjax><!---- pjax {#pjax} start ----></#if>
+		<#include "header.ftl">
+		<#include "article-list.ftl">
+		<#include "footer.ftl">
+	<#if pjax><!---- pjax {#pjax} end ----></#if>
+</div>
 </body>
 </html>
