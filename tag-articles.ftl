@@ -23,7 +23,7 @@
 					$.each(articles,function(index,a){
 						console.log(a.articleTags);
 						if((a.articleTags+"").indexOf("${tag.tagTitle}") < 0){
-							continue;
+							return;
 						}
 						
 						var date=new Date(a.articleCreateTime);
