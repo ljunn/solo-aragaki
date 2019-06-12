@@ -768,3 +768,7 @@ pre {
 .post-body a:hover{
 	color: cadetblue;
 }
+
+.pagination{
+	text-align: center;
+}
