@@ -1,7 +1,6 @@
 <aside>
-
-
- <#if mostCommentArticles??)>
+${mostCommentArticles.size()}
+ <#if mostCommentArticles??>
 	<div class=".aside-left.sidebar">
         <h3>最热文章</h3>
         <ul >
