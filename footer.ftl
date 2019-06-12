@@ -1,5 +1,7 @@
 <aside>
- <#if mostCommentArticles??&& (mostCommentArticles?size > 0)>
+
+
+ <#if mostCommentArticles??)>
 	<div class=".aside-left.sidebar">
         <h3>最热文章</h3>
         <ul >
@@ -15,7 +17,7 @@
         </ul>
 		<div class="clear"></div>
 	</div>
-	</#if>
+</#if>
 	
 	
 	 <#if mostUsedTags?? >
