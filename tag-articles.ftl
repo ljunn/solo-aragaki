@@ -21,7 +21,8 @@
 					var oldyear=0;
 					var content="";
 					$.each(articles,function(index,a){
-						if(a.articleTags.indexOf("${tag.tagTitle}") < 0){
+						console.log(a.articleTags);
+						if((a.articleTags+"").indexOf("${tag.tagTitle}") < 0){
 							continue;
 						}
 						
