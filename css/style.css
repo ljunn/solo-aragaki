@@ -719,3 +719,57 @@ footer .footer_slogan {
 #back_to_top span {
 	color:#ccc
 }
+@media only screen and (min-width: 450px) and and (max-width:600px) {
+	.wrapper {
+	margin-top:0
+}
+header .logo {
+	display:none
+}
+header .description {
+	float:none
+}
+header .description h1,header .description h2 {
+	text-align:center
+}
+.article-list {
+	margin:0;
+	padding:0
+}
+.article-list .meta {
+	padding-left:5%;
+	padding-right:5%
+}
+aside .sidebar {
+	width:100%;
+	float:none
+}
+pre,main section.content,aside {
+	padding:0 5%
+}
+aside {
+	padding-top:20px
+}
+pre {
+	padding-top:1em;
+	padding-bottom:1em
+}
+}svg {
+	height:20px;
+	width:20px;
+}
+
+.post-body *{
+	color: #555555;
+	font-family:consolas,Courier,monospace,sans-serif;
+}
+
+.post-body a:hover{
+	color: cadetblue;
+}
+
+.pagination{
+	text-align: center;
+}
+
+
