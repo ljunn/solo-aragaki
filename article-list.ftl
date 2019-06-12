@@ -14,7 +14,7 @@
 				<div class="meta">
 					<span class="item">
 						<i class="fa fa-calendar-o" ></i>
-						${article.articleCreateDate?string('yyyy.MM.dd')}
+						&nbsp;${article.articleCreateDate?string('yyyy.MM.dd')}
 					</span>
 					<span class="item">
 						<i class="fa fa-code" aria-hidden="true"></i>
