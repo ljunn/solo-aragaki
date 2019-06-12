@@ -773,7 +773,7 @@ pre {
 }
 
 
-.pagination__item{color:#FFFFFF;border-radius:3px;padding:0 10px;line-height:24px;display:inline-block;margin:0 0 10px 10px;background-color:rgba(114,102,186,0.58)}
+.pagination__item{color:#FFFFFF;border-radius:3px;padding:0 10px;line-height:24px;display:inline-block;margin:0 0 10px 10px;background-color:#BBBBBB}
 .pagination__item--text{background-color:rgba(255,255,255,0.8);color:#7266BA}
-.pagination__item--current{background-color:#6658b8}
-.pagination a.pagination__item:hover{text-decoration:none;background-color:#6658b8}
+.pagination__item--current{background-color:#5F9EA0}
+.pagination a.pagination__item:hover{text-decoration:none;background-color:#5F9EA0}
