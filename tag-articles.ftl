@@ -21,7 +21,6 @@
 					var oldyear=0;
 					var content="";
 					$.each(articles,function(index,a){
-						console.log(a.articleTags);
 						if((a.articleTags+"").indexOf("${tag.tagTitle}") < 0){
 							return;
 						}
@@ -73,7 +72,7 @@
 	
 	<h1 style="margin-top:0px;padding-top:0px;">文章标签</h1>
 
-	
+	<div class="meta">当前文章标签为：${tag.tagTitle}</div>
 	
 
 	

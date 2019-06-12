@@ -60,7 +60,7 @@
             ${statistic.statisticPublishedBlogArticleCount} posts crafted 	
         </a>
 	</span>
-	<span> ♥ <a href="https://github.com/PCDotFan/Aragaki">Aragaki</a></span>
+	<span> ♥ <a href="https://github.com/pengljun/solo-aragaki">Aragaki</a></span>
 	<div class="powered_by">Powered by 
 			<a href="https://solo.b3log.org/">Solo </a>
 	</div>

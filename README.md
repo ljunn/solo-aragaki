@@ -1,10 +1,14 @@
 # solo-aragaki
-移植到solo博客上的一款极简主题：「Aragaki」
 
-预览：[konngo](http://blog.konngo.cn/)
-
+移植到solo博客上的一款极简主题：「[Aragaki](https://github.com/PCDotFan/Aragaki)」
 
 
-emmmmmm  分页和标签页面还有问题，评论也有bug....
+预览：[konngo](http://blog.konngo.cn/?skin=solo-aragaki)
 
-请不要随便使用哦  = =
+![screenshot](preview.png)
+
+
+# License
+
+
+「solo-aragaki」移植自PCDotFan 的 Bitcron 主题 「[Aragaki](https://github.com/pcdotfan/Aragaki)」
