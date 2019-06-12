@@ -1,9 +1,9 @@
 <aside>
 	<div class=".aside-left.sidebar">
-	<#if 0 != mostViewCountArticles?size>
+	 <#if mostCommentArticles??&& (mostCommentArticles?size > 0)>
         <h3>最热文章</h3>
         <ul id="mostCommentArticles">
-            <#list mostViewCountArticles as article>
+            <#list mostCommentArticles as article>
             <li>
                 <a rel="nofollow" title="${article.articleTitle}"
                    href="${servePath}${article.articlePermalink}">
@@ -16,9 +16,9 @@
 		<div class="clear"></div>
     </#if>
 	
-	
 	</div>
 	<div class=".aside-left.sidebar">
+	 <#if mostUsedTags?? >
 		<h3>分门别类</h3>
 		<ul>
 			 <#list mostUsedTags as tag>
@@ -33,6 +33,7 @@
 			 </#list>
 		</ul>
 		<div class="clear"></div>
+		 </#if>
 	</div>
 </aside>
 
