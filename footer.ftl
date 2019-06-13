@@ -1,6 +1,6 @@
 <aside>
  <#if mostViewCountArticles??>
-	<div class=".aside-left.sidebar">
+	<div class="aside-left sidebar">
         <h3>最热文章</h3>
         <ul >
             <#list mostViewCountArticles as article>
@@ -19,7 +19,7 @@
 	
 	
 	 <#if mostUsedTags?? >
-	<div class=".aside-left.sidebar">
+	<div class="aside-left sidebar">
 		<h3>分门别类</h3>
 		<ul>
 			 <#list mostUsedTags as tag>
