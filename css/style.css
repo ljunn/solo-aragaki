@@ -646,11 +646,11 @@ aside {
 	margin:0 auto
 }
 aside .aside-left {
-	width:75%;
+	width:60%;
 	float: left;
 }
 aside .aside-right {
-	width:25%
+	width:10%
 	float: left;
 }
 aside .sidebar {
