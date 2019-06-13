@@ -14,8 +14,7 @@
 -->
 
 <aside>
-
-<#include 'side.ftl'/>
+<#include "side.ftl">
 	
 	
 	 <#if mostUsedTags?? >
