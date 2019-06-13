@@ -35,6 +35,7 @@
 		<div class="clear"></div>
 	</div>
 	 </#if>
+	 <div class="clear"></div>
 </aside>
 
 
