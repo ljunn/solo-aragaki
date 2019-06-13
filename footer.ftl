@@ -18,7 +18,7 @@
 	
 	
 	 <#if mostUsedTags?? >
-	<div class="aside-left sidebar">
+	<div class="aside-right sidebar">
 		<h3>分门别类</h3>
 		<ul>
 			 <#list mostUsedTags as tag>
