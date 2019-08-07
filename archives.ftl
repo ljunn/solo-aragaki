@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/style.css?${staticResourceVersion}"/>
 		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript">
 			console.log("开始渲染归档页面...");
 			var articles;
